@@ -19,10 +19,12 @@ public class Cat extends Animals {
     }
 
     public void setHeight(int height) {
-        if (height >= 0)
+        if (height >= 0){
             this.height = height;
-        else
-            System.out.println("Ошибка! Рост не может быть отрицательным числом!");
+        }
+        else {
+            System.out.println("Error! Height can not be negative!");
+        }
     }
 
     public int getWeight() {
@@ -30,20 +32,22 @@ public class Cat extends Animals {
     }
 
     public void setWeight(int height) {
-        if (height >= 0)
+        if (height >= 0) {
             this.weight = weight;
-         else
-            System.out.println("Ошибка! Вес не может быть отрицательным числом!");
+        }
+         else {
+            System.out.println("Error! Weight can not be negative!");
+        }
     }
 
     //методы
     public void voice ()
     {
-        System.out.println("Мяукать");
+        System.out.println("Mew");
     }
 
     public void play ()
     {
-        System.out.println("Играть");
+        System.out.println("Play");
     }
 }

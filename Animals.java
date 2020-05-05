@@ -5,16 +5,16 @@ public class Animals {
 
     public  void eat ()
     {
-        System.out.println("Есть");
+        System.out.println("Eat");
     }
 
     public void sleep ()
     {
-        System.out.println("Спать");
+        System.out.println("Sleep");
     }
 
     public void voice()
     {
-        System.out.println("Издавать звук");
+        System.out.println("Make noise");
     }
 }

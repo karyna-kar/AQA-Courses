@@ -5,11 +5,11 @@ public class Main {
     {
         Cat cat = new Cat ("Барсик", "Бенгальская кошка", "Пятнистый золотой", "Голубые",  25, 5);
 
-        System.out.println("Наш котик: ");
+        System.out.println("Our cat: ");
 
-        System.out.println("Кличка: " + cat.name + "; " + "Порода: " + cat.breed + "; " + "Окрас: " + cat.color + "; " + "Глаза: " + cat.eyes + "; "+ "Рост: " + cat.getHeight() + "; " + "Вес: " + cat.getWeight());
+        System.out.println("Name: " + cat.name + "; " + "Breed: " + cat.breed + "; " + "Color: " + cat.color + "; " + "Eyes: " + cat.eyes + "; "+ "Height: " + cat.getHeight() + "; " + "Weight: " + cat.getWeight());
 
-        System.out.println("Доступные Методы: ");
+        System.out.println("Available methods: ");
 
         cat.eat();
         cat.sleep();
