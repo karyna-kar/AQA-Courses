@@ -1,10 +1,9 @@
-package Task3_1;
+package Task2_1;
 
 public class Flowers {
     protected String name;
     protected double price;
     protected String color;
-    static double total;
 
     public Flowers(String name, String color, double price){
         this.name=name;

@@ -1,4 +1,4 @@
-package Task3_1;
+package Task2_1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -6,23 +6,25 @@ import java.io.InputStreamReader;
 public class Main {
 
     public static void main(String[] args) throws Exception {
+        FlowerPack pack = new FlowerPack();
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Enter a number of Roses in bouquet: ");
+        int count = Integer.parseInt(reader.readLine());
 
-        System.out.print("Введите количество Роз в букете: ");
-        int count =  Integer.parseInt(reader.readLine());
-        Rose roses [] = new Rose [count];
-        for(int i=0; i<roses.length;i++) {
-            roses[i] = new Rose("Роза кустовая", "Белая", 3.5);
+        for (int i = 0; i < count; i++) {
+            Rose rose = new Rose("Rose", "White", 3.5);
+            pack.addFlowersPack(rose);
         }
 
+        System.out.print("Enter a number of Tulips in bouquet: ");
+        count = Integer.parseInt(reader.readLine());
 
-        System.out.print("Введите количество Тюльпанов в букете: ");
-        count =  Integer.parseInt(reader.readLine());
-        Tulip tulips [] = new Tulip [count];
-        for (int i=0; i< tulips.length; i++) {
-            tulips[i] = new Tulip("Тюльпан", "Желтый", 2);
+        for (int i = 0; i < count; i++) {
+            Tulip tulip = new Tulip("Tulip", "Yellow", 2);
+            pack.addFlowersPack(tulip);
         }
 
-        System.out.println("Sum:" + Flowers.total);
+        System.out.println("Total price: "+pack.getPackPrice()+" $");
     }
 }
