@@ -3,16 +3,16 @@ package Task;
 import Task.ILineStep;
 import Task.IProductPart;
 
-public class LineParts implements ILineStep {
-    String detail;
+public class LineStep implements ILineStep {
+    private String detail;
 
-    LineParts(String detail) {
+    LineStep(String detail) {
 
         this.detail = detail;
     }
 
     public IProductPart buildProductPart(){
-        System.out.println("Изготовление детали " + this.detail);
+        System.out.println(this.detail + " is build");
         return new ProductPart(this.detail);
     }
 }

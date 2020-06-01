@@ -3,22 +3,22 @@ package Task;
 import Task.IProductPart;
 
 public class ProductPart implements IProductPart {
-    String productPart;
+    private String nameProductPart;
 
     ProductPart(String productPart) {
 
-        this.productPart = productPart;
+        this.nameProductPart = productPart;
     }
 
-    public void setProductPart(String productPart)
+    public void setNameProductPart(String nameProductPart)
     {
 
-        this.productPart = productPart;
+        this.nameProductPart = nameProductPart;
     }
 
-    public String getProductPart()
+    public String getNameProductPart()
     {
-        return this.productPart;
+        return this.nameProductPart;
     }
     
 }
