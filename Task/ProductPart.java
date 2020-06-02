@@ -5,7 +5,7 @@ import Task.IProductPart;
 public class ProductPart implements IProductPart {
     private String nameProductPart;
 
-    ProductPart(String productPart) {
+    public ProductPart(String productPart) {
 
         this.nameProductPart = productPart;
     }

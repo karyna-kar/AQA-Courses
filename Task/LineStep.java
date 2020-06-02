@@ -6,7 +6,7 @@ import Task.IProductPart;
 public class LineStep implements ILineStep {
     private String detail;
 
-    LineStep(String detail) {
+    public LineStep(String detail) {
 
         this.detail = detail;
     }
